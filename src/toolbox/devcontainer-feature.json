@@ -1,0 +1,17 @@
+{
+    "id": "toolbox",
+    "version": "1.0.0",
+    "name": "Toolbox",
+    "description": "A custom feature that installs various tools",
+    "dependsOn": {
+        "ghcr.io/devcontainers/features/common-utils:2": {
+            "installZsh": true,
+            "configureZshAsDefaultShell": true,
+            "installOhMyZsh": true,
+            "installOhMyZshConfig": true
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/mikaello/devcontainer-features/modern-shell-utils:2"
+    ]
+}
